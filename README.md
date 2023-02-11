@@ -1,5 +1,6 @@
 
-# This is an example of how you might use docker-compose to bring up a monitoring stack
+# Docker Compose - A Full Stack Example
+This is an example of how you might use docker-compose to bring up a monitoring stack
 
 1. Clone the repostiroy
 
