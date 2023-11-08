@@ -27,6 +27,8 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=changemeplease
     networks:
       - backend
+    depends_on:
+      - influxdb
 
   prometheus:
     image: prom/prometheus:v2.24.0
@@ -36,6 +38,8 @@ services:
       - prometheus-storage:/prometheus
     networks:
       - backend
+    depends_on:
+      - influxdb
 
 volumes:
   influxdb-storage:
